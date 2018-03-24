@@ -242,4 +242,6 @@ export async function update(ids:string[]): Promise<void>
 	{
 		checkListArray[i].done = ids.indexOf(stringNameToId(checkListArray[i].name)) !== -1;
 	}
+
+	saveList();
 }
