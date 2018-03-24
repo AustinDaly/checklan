@@ -1,0 +1,9 @@
+{{>head}}
+<body>
+	<form action="/update" method="POST">
+		{{#items}}
+			{{>checklist}}
+		{{/items}}
+		<input type="submit" value="Submit">
+	</form>
+</body>
